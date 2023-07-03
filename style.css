@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    width: 75vw;
+    width: 70vw;
     margin: 0 auto;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +17,7 @@ body {
 .img-container {
     background: url(images/gaming.jpg);
     background-size: cover;
-    width: 35%;
+    width: 40%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ body {
 .form-container {
     background-color: rgb(243, 243, 243);
     overflow: hidden;
-    width: 65%;
+    width: 60%;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -109,6 +109,21 @@ body {
 
 .form-item input:focus {
     background-color: rgba(240, 248, 255, 0.5);
+}
+
+.form-item .invalid-password {
+    border: 1px solid red;
+}
+
+.form-item .valid-password {
+    border: 1px solid green;
+}
+
+#password-match {
+    color: red;
+    font-size: .75rem;
+    margin-top: 2px;
+    opacity: 0;
 }
 
 /* Form footer */
