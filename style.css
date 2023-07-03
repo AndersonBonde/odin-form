@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: white;
-    width: 80vw;
+    background-color: black;
+    width: 75vw;
     margin: 0 auto;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +25,7 @@ body {
 
 .logo {
     background-color: white;
-    opacity: .45;
+    opacity: .35;
     margin-block: auto;
     font-size: 96px;
     letter-spacing: -8px;
@@ -34,6 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .logo img {
@@ -106,6 +107,10 @@ body {
     width: 300px;
 }
 
+.form-item input:focus {
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
 /* Form footer */
 
 .form-footer {
@@ -114,17 +119,47 @@ body {
 
 .form-footer button {
     padding: 12px 40px;
-    background: rgb(111, 180, 45);
+    background: linear-gradient(rgb(182, 50, 194) 50%, rgb(138, 28, 148));
     border: none;
     border-radius: 6px;
     color: white;
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 40px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, .25);
 }
 
 .form-footer button:hover {
     cursor: pointer;
-    background: linear-gradient(rgb(111, 180, 45) 50%, rgb(82, 136, 31));
+    background: rgb(182, 50, 194);
+}
+
+.form-footer a {
+    color: rgb(182, 50, 194);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    color:rgb(138, 28, 148);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        width: 90%;
+    }
+
+    .form-row {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .form-item {
+        flex: 1 100%;
+    }
+
+    .form-item input {
+        width: 80%;
+    }
 }

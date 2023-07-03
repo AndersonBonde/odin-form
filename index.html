@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Practice</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="img-container">
@@ -31,36 +31,36 @@
             <div class="form-row">
                 <div class="form-item">
                     <label for="user-first-name">First Name</label>
-                    <input type="text" name="user-first-name" id="user-first-name">
+                    <input type="text" name="user-first-name" id="user-first-name" required>
                 </div>
                 <div class="form-item">
                     <label for="user-last-name">Last Name</label>
-                    <input type="text" name="user-last-name" id="user-last-name">
+                    <input type="text" name="user-last-name" id="user-last-name" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-item">
                     <label for="user-email">Email</label>
-                    <input type="email" name="user-email" id="user-email">
+                    <input type="email" name="user-email" id="user-email" required>
                 </div>
                 <div class="form-item">
                     <label for="user-phone">Phone Number</label>
-                    <input type="tel" name="user-phone" id="user-phone">
+                    <input type="tel" name="user-phone" id="user-phone" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-item">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="form-item">
                     <label for="password-confirm">Confirm Password</label>
-                    <input type="password" name="password-confirm" id="password-confirm">
+                    <input type="password" name="password-confirm" id="password-confirm" required>
                 </div>
             </div>
         </form>
         <div class="form-footer">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="user-form" id="submit-button">Create Account</button>
             <p>
                 Already have an account? <a href="#">Log in</a>
             </p>
