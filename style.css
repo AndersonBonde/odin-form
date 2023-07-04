@@ -25,10 +25,10 @@ body {
 
 .logo {
     background-color: white;
+    font-family: "Luckiest Guy", cursive, sans-serif;
     opacity: .35;
     margin-block: auto;
-    font-size: 96px;
-    letter-spacing: -8px;
+    font-size: 112px;
     text-align: center;
     max-height: 160px;
     display: flex;
@@ -41,6 +41,10 @@ body {
     max-height: 160px;
     filter: invert();
     padding: 10px;
+}
+
+.logo p {
+    padding-top: 36px;
 }
 
 .img-credit {
@@ -134,7 +138,7 @@ body {
 
 .form-footer button {
     padding: 12px 40px;
-    background: linear-gradient(rgb(182, 50, 194) 50%, rgb(138, 28, 148));
+    background: linear-gradient(rgb(182, 50, 194) 50%, rgb(122, 22, 131));
     border: none;
     border-radius: 6px;
     color: white;
